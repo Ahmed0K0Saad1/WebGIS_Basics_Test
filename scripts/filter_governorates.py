@@ -1,5 +1,6 @@
 import geopandas as gpd
 import matplotlib.pyplot as plt
+import os
 
 gdf = gpd.read_file("data/gadm41_EGY_1.shp")
 print(gdf['NAME_1'].unique())
@@ -17,3 +18,6 @@ selected_govs.plot(edgecolor="red",facecolor="green" ,ax=ax)
 # Adding labels to the selected governorates
 ax.set_title("Selected Governorates in Egypt")
 plt.show()
+
+# Save output instead of showing
+fig.savefig(os.path.join("output", "selected_governorates.png"), dpi=300)
