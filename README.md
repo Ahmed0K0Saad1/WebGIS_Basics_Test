@@ -1,21 +1,69 @@
-# WebGIS_Basics_Test
+# WebGIS Basics — Egypt Spatial Analysis
+
+> **Learning project** | Python · GeoPandas · Shapely · Real-world spatial data
+
+---
+
+## 🗺️ Output Preview
+
+![Selected Governorates in Egypt](output/selected_governorates.png)
+
+*Spatial filtering of Egypt's administrative boundaries using GeoPandas — governorates highlighted based on attribute queries.*
+
+---
 
 ## 📌 Overview
-This project is part of my learning journey in Geographic Information Systems (GIS) and programming.  
-It focuses on building a solid foundation in WebGIS using Python, GeoPandas, and real-world spatial data.
 
-## 🎯 Goals
-- Learn how to read and visualize spatial data (Shapefiles, OSM).
-- Practice filtering and analyzing geospatial datasets.
-- Build a structured project that can grow into a professional WebGIS portfolio.
+This project is part of my structured learning journey in Geographic Information Systems and backend development.  
+It focuses on building a professional foundation in WebGIS using Python and real-world Egyptian spatial data.
 
-## 🗂 Project Structure
-- `data/` → contains shapefiles (Egypt administrative boundaries).
-- `scripts/` → Python scripts for reading and analyzing data.
-- `docs/` → documentation and notes.
-- `venv/` → virtual environment (ignored in Git).
+**What I practiced here:**
+- Reading and parsing Shapefiles with GeoPandas
+- Filtering geographic features by attribute (governorate name, region)
+- Visualizing spatial data with styled choropleth maps
+- Structuring a GIS project for portfolio use
 
-## 🚀 Next Steps
-- Add OSM road data and integrate with boundaries.
-- Perform spatial analysis (length of roads, counts per governorate).
-- Prepare for web visualization (Leaflet/Mapbox).
+---
+
+## 🛠️ Tech Stack
+
+| Tool | Purpose |
+|---|---|
+| Python 3 | Core scripting language |
+| GeoPandas | Spatial data reading & analysis |
+| Shapely | Geometry operations |
+| Matplotlib | Map visualization |
+| Git & GitHub | Version control |
+
+---
+
+## 🗂️ Project Structure
+
+```
+WebGIS_Basics_Test/
+│
+├── data/               # Egypt administrative boundary shapefiles
+├── scripts/            # Python analysis & visualization scripts
+├── docs/               # Output maps, notes, documentation
+└── README.md
+```
+
+---
+
+## 🚀 Roadmap
+
+- [x] Read Egypt shapefile and display all governorates
+- [x] Filter and highlight specific governorates spatially
+- [x] Style map output (colors, borders, titles)
+- [ ] Integrate OSM road network data
+- [ ] Spatial analysis: road length per governorate
+- [ ] Web visualization with Leaflet.js / Mapbox GL
+- [ ] Connect to PostGIS database backend
+
+---
+
+## 👤 About
+
+**Ahmed Khaled Saad** — Junior GIS Developer  
+📍 Tanta, Egypt | GIS Student, Tanta University (Class of 2027)  
+🔗 [LinkedIn](https://www.linkedin.com/in/ahmed-khaled-18417b299) · [GitHub](https://github.com/Ahmed0K0Saad1)
