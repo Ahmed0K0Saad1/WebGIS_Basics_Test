@@ -63,5 +63,5 @@ legend_patches = [
 plt.legend(handles=legend_patches, loc="upper right", title="Map Layers")
 
 #12: save the figure 
-fig.savefig(os.path.join("output", "Spatial Filtering of Governorates.png"), dpi=300)
+fig.savefig(os.path.join("output", "Spatial_Filtering_of_Governorates.png"), dpi=300)
 plt.show()
