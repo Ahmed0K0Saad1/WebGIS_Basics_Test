@@ -55,3 +55,6 @@ Final Map: Saved as output/Spatial_Filtering_of_Governorates.png
 
 Key Takeaway
 Spatial filtering requires careful consideration of polygon size and coordinate reference systems (CRS). Visualization is not just for presentation—it is a validation tool that confirms the correctness of geospatial analysis.
+
+## 📊 Outputs
+- `output/Spatial_Filtering_of_Governorates.png`
