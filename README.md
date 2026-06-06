@@ -6,7 +6,9 @@
 
 ## 🗺️ Output Preview
 
+![Selected Cairo Governorate](output/cairo_map.png)
 ![Selected Governorates in Egypt](output/selected_governorates.png)
+
 
 *Spatial filtering of Egypt's administrative boundaries using GeoPandas — governorates highlighted based on attribute queries.*
 
