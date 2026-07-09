@@ -31,8 +31,23 @@ Matplotlib	Map visualization
 Git & GitHub	Version control
 🗂️ Project Structure
 
-WebGIS_Basics_Test/ │ ├── config/ # ⚙️ System settings & Data Catalog │ └── settings.py # Single source of truth for all paths │ ├── data/
-│ └── raw/ # Egypt administrative boundary shapefiles │ ├── scripts/ # 🐍 Python analysis & validation scripts │ └── check_data.py # Verifies Shapefile integrity (.shp, .dbf, etc.) │ ├── output/ # Generated maps & results ├── docs/ # Setup notes & documentation └── README.md
+WebGIS_Basics_Test/
+│ 
+├── config/ # ⚙️ System settings & Data Catalog
+│
+└── settings.py # Single source of truth for all paths 
+│
+├── data/
+│ └── raw/ # Egypt administrative boundary shapefiles 
+│ 
+├── scripts/ # 🐍 Python analysis & validation scripts 
+│ 
+└── check_data.py # Verifies Shapefile integrity (.shp, .dbf, etc.) 
+│ 
+├── output/ # Generated maps & results 
+├── docs/ 
+# Setup notes & documentation 
+└── README.md
 
 text
 
