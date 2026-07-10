@@ -1,8 +1,18 @@
-from pathlib import path
+from pathlib import Path
 
-BASE_DIR = path(__file__).resolve().parent.parent
+# 1: Base Directories
+BASE_DIR = Path(__file__).resolve().parent.parent
 
-DATA_DIR = BASE_DIR / "data" / "raw"
-MAPS_DIR = BASE_DIR / "outbut"
+DATA_DIR = BASE_DIR / "data"
+RAW_DATA = DATA_DIR / "raw"
+OUTPUT_DIR = BASE_DIR / "output"
+DOCS_DIR = BASE_DIR / "docs"
+SCRIPTS_DIR = BASE_DIR / "scripts"
 
-EGYPT_GOVERNORATES = DATA_DIR / "boundaries" / "gadm41_EGY_1.shp"
+class DataCatalog:
+    EGYPT_COUNTRY = RAW_DATA / "gadm41_EGY_0.shp"
+    EGYPT_GOVERNORATES = RAW_DATA / "gadm41_EGY_1.shp"
+    EGYPT_DISTRICTS = RAW_DATA / "gadm41_EGY_2.shp"
+
+
+DEFAULT_CRS = "EPSG:4326"
