@@ -1,6 +1,5 @@
 from pathlib import Path
 
-# 1: Base Directories
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 DATA_DIR = BASE_DIR / "data"
@@ -16,3 +15,16 @@ class DataCatalog:
 
 
 DEFAULT_CRS = "EPSG:4326"
+
+def ensure_directories_exist():
+    
+    required_dirs = [DATA_DIR, RAW_DATA,OUTPUT_DIR,DOCS_DIR,SCRIPTS_DIR]
+
+    for directory in required_dirs:
+        directory.mkdir(parents=True, exist_ok=True)
+    
+    print("All Required Directories Are Checked And Ready")
+
+    if __name__ == "__main__":
+        ensure_directories_exist()
+        print(f"Base Directory is: {BASE_DIR}")
